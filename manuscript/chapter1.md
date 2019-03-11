@@ -6,27 +6,27 @@ Ky kapitull &euml;sht&euml; nj&euml; hyrje n&euml; React, nj&euml; librari e Jav
 
 Aplikacionet për një faqe të vetme  ([SPA](https://en.wikipedia.org/wiki/Single-page_application)) janë bërë gjithnjë e më popullore në vitet e fundit, pasi framework si Angular, Ember dhe Backbone lejojnë zhvilluesit JavaScript për të ndërtuar aplikacione moderne të uebit duke përdorur teknika përtej JavaScript dhe jQuery. Të treja të lartpërmendurat janë ndër SPA-të e para, secila prej tyre vjen në vetvete ndërmjet 2010 dhe 2011, por ka shumë e më shumë opsione për zhvillimin e faqeve në një të vetme. Gjenerata e parë e SPA framework arriti në nivelin enterprise, prandaj framework i tyre është më i ngurtë. React, nga ana tjetër, mbetet një librari inovative që është adoptuar nga shumë liderë teknologjikë si [Airbnb, Netflix, dhe Facebook](https://github.com/facebook/react/wiki/Sites-Using-React).
 
-React was released by Facebook's web development team in 2013 as a view library, which makes it the 'V' in the [MVC](https://en.wikipedia.org/wiki/Model–view–controller) (model view controller). As a view, it allows you to render components as viewable elements in a browser, while its ecosystem lets us build single page applications. While the first generation of frameworks tried to solve many things at once, React is only used to build your view layer; specifically, it is a library wherein the view is a hierarchy of composable components. If you haven't heard about MVC before, don't bother about it, because it's just there to put React historically into context for people who come from other programming languages.
+React u publikua nga ekipi i zhvillimit të rrjetit të Facebook në 2013 si një librari pamore, e cila e bën atë 'V' në  [MVC](https://en.wikipedia.org/wiki/Model–view–controller) (model view controller).  Si pamje, ajo ju lejon të renditni përbërësit si elementë të dukshëm në një browser, ndërsa ekosistemi i tij na lejon të ndërtojmë aplikacione me faqe të vetme. Ndërsa gjenerata e parë e framework-ut u përpoq për të zgjidhur shumë gjëra në të njëjtën kohë, React përdoret vetëm për të ndërtuar shtresën tuaj pamore; në mënyrë specifike, ajo është një librari ku pamja është një hierarki e komponentëve përbërës. Nëse nuk keni dëgjuar për MVC më parë, mos u mërzitni për këtë, sepse është vetëm aty për ta vënë React historikisht në kontekst për njerëzit që vijnë nga gjuhët e tjera programuese.
 
-In React, the focus remains on the view layer until more aspects are introduced to the application. These are the building blocks for an SPA, which are essential to build a mature application. They come with two advantages:
+Në React, fokusi mbetet në shtresën pamore derisa më shumë aspekte të futen në aplikacion. Këto janë blloqet ndërtuese për një SPA, të cilat janë thelbësore për të ndërtuar një aplikim të maturuar. Ata vijnë me dy përparësi:
 
-* You can learn the building blocks one at a time without having to understand them altogether. In contrast, an SPA framework gives you every building block from the start. This book focuses on React as the first building block. More building blocks will eventually follow.
+* Ju mund të mësoni blloqet e ndërtimit një nga një, pa pasur nevojë t'i kuptoni ato krejtësisht. Në të kundërt, një framework SPA ju jep çdo bllok ndërtimi që nga fillimi. Ky libër përqëndrohet në React si bllokun e parë të ndërtimit. Në fund do të ndjekim më shumë blloqe ndërtimi.
 
-* All building blocks are interchangeable, which makes the ecosystem around React highly innovative. Multiple solutions can compete with each other, and you can choose the most appealing solution for any given challenge.
+* Të gjitha blloqet e ndërtimit janë të këmbyeshme, gjë që e bën ekosistemin rreth React shumë inovativ. Zgjidhje të shumëfishta mund të konkurrojnë me njëri-tjetrin dhe ju mund të zgjidhni zgjidhjen më tërheqëse për çdo sfidë të dhënë.
 
-React is one of the best choices for building modern web applications. Again, it only delivers the view layer, but the surrounding ecosystem makes up an entirely flexible and interchangeable framework. React has a slim API, a robust and evolving ecosystem, and a great community.
+React është një nga zgjedhjet më të mira për ndërtimin e aplikacioneve të internetit moderne. Përsëri, ajo jep vetëm shtresën pamore, por ekosistemi përreth përbën një framework krejtësisht fleksibël dhe të këmbyeshëm. React ka një API të hollë, një ekosistem të fuqishëm dhe evolues, dhe një komunitet të mrekullueshëm.
 
-### Exercises
+### Ushtrime
 
-If you'd like to know more about why I chose React, or to find a more in-depth look at the topics mentioned above, these articles grant a deeper perspective:
+Nëse dëshironi të dini më shumë për arsyen pse zgjodha React ose për të gjetur një vështrim më të thellë në temat e përmendura më lart, këto artikuj japin një perspektivë më të thellë:
 
-* [Why I moved from Angular to React](https://www.robinwieruch.de/reasons-why-i-moved-from-angular-to-react/)
-* [React's flexible ecosystem](https://www.robinwieruch.de/essential-react-libraries-framework/)
-* [How to learn a framework](https://www.robinwieruch.de/how-to-learn-framework/)
+* [Pse u zhvendosa nga Angular në React](https://www.robinwieruch.de/reasons-why-i-moved-from-angular-to-react/)
+* [Ekosistemi fleksibel React](https://www.robinwieruch.de/essential-react-libraries-framework/)
+* [Si të mësoni një framework](https://www.robinwieruch.de/how-to-learn-framework/)
 
-## Requirements
+## Kërkesat
 
-To follow this book, you should be familiar with the basics of web development, i.e how to use HTML, CSS, and JavaScript. It also makes sense to understand how [APIs](https://www.robinwieruch.de/what-is-an-api-javascript/) work, as they will be covered thoroughly. Also, I encourage you to join the official [Slack Group](https://slack-the-road-to-learn-react.wieruch.com/) to be a part of a growing React community where you can learn from and help others.
+Për të ndjekur këtë libër, duhet të njiheni me bazat e zhvillimit të uebit, dmth. si të përdorni HTML, CSS dhe JavaScript. Gjithashtu ka sens të kuptojmë se si funksionojnë [APIs] (https://www.robinwieruch.de/what-is-an-api-javascript/), pasi ato do të mbulohen tërësisht. Gjithashtu, ju inkurajoj që të bashkoheni në grupin zyrtar [Slack Group] (https://slack-the-road-to-learn-react.wieruch.com/) të jeni pjesë e një komuniteti në rritje React ku mund të mësoni nga dhe të ndihmoni të tjeret.
 
 ### Editor and Terminal
 
