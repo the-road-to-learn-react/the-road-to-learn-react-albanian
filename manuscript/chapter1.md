@@ -128,24 +128,24 @@ npm install react react-dom
 
 Kjo rrugë shpesh përdoret për të shtuar React në një aplikacion ekzistues të menaxhuar me npm.
 
-You may also have to deal with [Babel](http://babeljs.io/) to make your application aware of JSX (the React syntax) and JavaScript ES6. Babel transpiles your code--that is, it converts it to vanilla JavaScript--so most modern browsers can interpret JavaScript ES6 and JSX. Because of this difficult setup, Facebook introduced *create-react-app* as a zero-configuration React solution. The next section will show you how to setup your application using this bootstrapping tool.
+Ju gjithashtu mund të merreni me Babel për ta bërë aplikimin tuaj të vetëdijshëm për JSX (sintaksën React) dhe JavaScript ES6. Babel përkthen kodin tuaj - konverton atë në JavaScript - kështu që shfletuesit më moderne mund të interpretojnë JavaScript ES6 dhe JSX. Për shkak të këtij setupi të vështirë, Facebook prezantoi create-react-app si një zgjidhje zero-konfigurimi React. Seksioni i ardhshëm do t'ju tregojë se si ta konfiguroni aplikacionin tuaj duke përdorur këtë mjet bootstrap.
 
-### Exercises:
+### Ushtrime:
 
-* Read about [React installations](https://reactjs.org/docs/getting-started.html)
+* Lexoni rreth [React installations](https://reactjs.org/docs/getting-started.html)
 
-## Zero-Configuration Setup
+## Setup me Zero-Configurim
 
-In the Road to learn React, we will be using [create-react-app](https://github.com/facebookincubator/create-react-app) to bootstrap your application. It's an opinionated yet zero-configuration starter kit for React introduced by Facebook in 2016, [recommended for beginners by 96% of React users](https://twitter.com/dan_abramov/status/806985854099062785). In *create-react-app* the tooling and configuration evolve in the background, while the focus is on the application implementation.
+Në Rrugën për të mësuar React, do të përdorim [create-react-app] (https://github.com/facebookincubator/create-react-app) për të nisur aplikimin tuaj. Është një kompozim i përshtatshëm i konfigurimit për React të prezantuar nga Facebook në 2016, [rekomandohet për fillestarët nga 96% e përdoruesve të React] (https://twitter.com/dan_abramov/status/806985854099062785). Në * create-react-app * përpunimi dhe konfigurimi evoluojnë në sfond, ndërsa fokusi është në zbatimin e aplikacionit.
 
-To get started, install the package to your global node packages, which keeps it available on the command line to bootstrap new React applications:
+Për të filluar, instaloni paketën në paketat tuaj të nodeve globale, në dispozicion në rreshtin e komandave për të nisur aplikacionet e reja React:
 
 {title="Command Line",lang="text"}
 ~~~~~~~~
 npm install -g create-react-app
 ~~~~~~~~
 
-You can check the version of *create-react-app* to verify a successful installation on your command line:
+Ju mund të kontrolloni versionin e * create-react-app * për të verifikuar një instalim të suksesshëm në rreshtin tuaj të komandës:
 
 {title="Command Line",lang="text"}
 ~~~~~~~~
@@ -153,7 +153,7 @@ create-react-app --version
 *v2.0.2
 ~~~~~~~~
 
-Now you are ready to bootstrap your first React application. The example will be referred to as *hackernews*, but you may choose any name you like. First, navigate into the folder:
+Tani ju jeni gati për të nisur aplikimin tuaj të parë React. Shembulli do të quhet * hackernews * , por ju mund të zgjidhni ndonjë emër që ju pëlqen. Së pari, shkojmë në folder :
 
 {title="Command Line",lang="text"}
 ~~~~~~~~
@@ -161,7 +161,7 @@ create-react-app hackernews
 cd hackernews
 ~~~~~~~~
 
-Now you can open the application in your editor. The following folder structure, or a variation of it depending on the *create-react-app* version, should be presented to you:
+Tani mund ta hapni aplikacionin në editorin tuaj. Struktura e mëposhtme e folderave * create-react-app * ,duhet të paraqitet tek ju:
 
 {title="Folder Structure",lang="text"}
 ~~~~~~~~
@@ -184,7 +184,7 @@ hackernews/
     serviceWorker.js
 ~~~~~~~~
 
-This is a breakdown of the folders and files:
+Ky është një ndarje e folderave dhe fileve:
 
 * **README.md:** The .md extension indicates the file is a markdown file. Markdown is used as a lightweight markup language with plain text formatting syntax. Many source code projects come with a *README.md* file to give you initial instructions about the project. When pushing your project to a platform such as GitHub, the *README.md* file usually displays information about the content contained in the repository. Because you used *create-react-app*, your *README.md* should be the same as the official [create-react-app GitHub repository](https://github.com/facebookincubator/create-react-app).
 
