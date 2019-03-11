@@ -2,7 +2,7 @@
 
 [![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/)
 
-Repository zyrtar p&euml;r [Rruga p&euml;r t&euml; m&euml;suar React](https://www.robinwieruch.de/the-road-to-learn-react/). N&euml;se d&euml;shironi t&euml; leni nj&euml; rishikim, lutemi b&euml;jeni n&euml; [Amazon] (https://www.amazon.com/dp/B077HJFCQX?tag=21moves-20)  ose [Goodreads]](https://www.goodreads.com/book/show/37503118-the-road-to-learn-react).
+Repository zyrtar p&euml;r [Rruga p&euml;r t&euml; m&euml;suar React](https://www.robinwieruch.de/the-road-to-learn-react/). N&euml;se d&euml;shironi t&euml; leni nj&euml; rishikim, lutemi b&euml;jeni n&euml; [Amazon](https://www.amazon.com/dp/B077HJFCQX?tag=21moves-20) ose [Goodreads](https://www.goodreads.com/book/show/37503118-the-road-to-learn-react).
 
 ## P&euml;rkthimet e librit n&euml; Leanpub
 
