@@ -84,11 +84,11 @@ Së fundi, ka një komandë tjetër për të mbuluar rreth npm:
 npm install --save-dev <package>
 ~~~~~~~~
 
-The `--save-dev` flag indicates that the node package is only used in the development environment, meaning it won't be used in when the application is deployed to a the server or used in production. It is useful for testing an application using a node package, but want to exclude it from your production environment.
+Flamuri `--Save-dev` tregon se paketa e nodeve përdoret vetëm në mjedisin e zhvillimit, që do të thotë se nuk do të përdoret kur aplikacioni të vendoset në një server ose të përdoret në production. Është e dobishme për testimin e një aplikacioni duke përdorur një paketë nodesh, por dëshironi ta përjashtoni atë nga mjedisi juaj i production.
 
-Some of you may want to use other package managers to work with node packages in your applications. **Yarn** is a dependency manager that works similar to **npm**. It has its own list of commands, but you still have access to the same npm registry. Yarn was created to solve issues npm couldn't, but both tools have evolved to the point where either will suffice today.
+Disa prej jush mund të duan të përdorin menaxherët e tjerë të paketave për të punuar me paketat e nodeve në aplikacionet tuaja. **Yarn** është një menaxher i varësisë që punon i ngjashëm me **npm**.  Ajo ka listën e vet të komandave, por ju ende keni akses në të njëjtin regjistër npm. Yarn u krijua për të zgjidhur çështjet që npm nuk mundet, por të dy mjetet kanë evoluar deri në atë pikë ku mjaftojnë sot.
 
-### Exercises:
+### Ushtrime:
 
 * Set up a throw away npm project using the terminal:
   * Create a new folder with `mkdir <folder_name>`
