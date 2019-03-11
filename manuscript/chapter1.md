@@ -1,6 +1,6 @@
 # Hyrje n&euml; React
 
-Ky kapitull &euml;sht&euml; nj&euml; hyrje n&euml; React, nj&euml; librari e JavaScript p&euml;r renderimin e nd&euml;rfaqeve n&euml; nj&euml; faqe t&euml; vetme dhe aplikacioneve mobile, ku un&euml; shpjegoj pse zhvilluesit duhet t&euml; marrin parasysh shtimin e libraris&euml; React si mjet t&euml; tyrin. Ne do t&euml; zhytemi n&euml; ekosistemin React, duke krijuar aplikacionin tuaj t&euml; par&euml; React nga zeroja pa konfigurim. S&euml; bashku, ne do t&euml; prezantojm&euml;  **JSX** , sintaks&euml;n p&euml;r React dhe  **ReactDOM** , k&euml;shtu q&euml; ju do t&euml; keni nj&euml; kuptim t&euml; p&euml;rdorimeve praktike t&euml; React n&euml; aplikimet moderne t&euml; internetit .
+Ky kapitull &euml;sht&euml; nj&euml; hyrje n&euml; React, nj&euml; librari e JavaScript p&euml;r renderimin e nd&euml;rfaqeve n&euml; nj&euml; faqe t&euml; vetme dhe aplikacioneve mobile, ku shpjegohet pse zhvilluesit duhet t&euml; marrin parasysh shtimin e libraris&euml; React si mjet t&euml; tyrin. Ne do t&euml; zhytemi n&euml; ekosistemin React, duke krijuar aplikacionin tuaj t&euml; par&euml; React nga zeroja pa konfigurim. S&euml; bashku, ne do t&euml; prezantojm&euml;  **JSX** , sintaks&euml;n p&euml;r React dhe  **ReactDOM** , k&euml;shtu q&euml; ju do t&euml; keni nj&euml; kuptim t&euml; p&euml;rdorimeve praktike t&euml; React n&euml; aplikimet moderne t&euml; internetit .
 
 ## P&euml;rsh&euml;ndetje, emri im &euml;sht&euml; React.
 
