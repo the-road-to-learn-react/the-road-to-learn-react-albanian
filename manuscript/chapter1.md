@@ -98,7 +98,7 @@ Disa prej jush mund të duan të përdorin menaxherët e tjerë të paketave pë
   * Kontrolloni file *package.json* dhe folder *node_modules/*
   * Përpiqu për të çinstaluar dhe instaluar paketën * react * node
 * Lexoni rreth [npm](https://docs.npmjs.com/)
-* Lexoni rreth menaxherit të paketave[yarn](https://yarnpkg.com/en/docs/) 
+* Lexoni rreth menaxherit të paketave [yarn](https://yarnpkg.com/en/docs/) 
 
 ## Instalimi
 
