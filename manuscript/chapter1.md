@@ -90,15 +90,15 @@ Disa prej jush mund të duan të përdorin menaxherët e tjerë të paketave pë
 
 ### Ushtrime:
 
-* Set up a throw away npm project using the terminal:
-  * Create a new folder with `mkdir <folder_name>`
-  * Navigate into the folder with `cd <folder_name>`
-  * Execute `npm init -y` or `npm init`
-  * Install a local package like React with `npm install react`
-  * Check the *package.json* file and the *node_modules/* folder
-  * Attempt to uninstall and reinstall the *react* node package
-* Read about [npm](https://docs.npmjs.com/)
-* Read about [yarn](https://yarnpkg.com/en/docs/) package manager
+* Krijoni një projekt npm duke përdorur terminalin:
+  * Krijo një folder të ri me `mkdir <folder_name>`
+  * Lundroni në folder me `cd <folder_name>`
+  * Exekuto `npm init -y` ose `npm init`
+  * Instaloni një paketë lokale si React me `npm install react`
+  * Kontrolloni file *package.json* dhe folder *node_modules/*
+  * Përpiqu për të çinstaluar dhe instaluar paketën * react * node
+* Lexoni rreth [npm](https://docs.npmjs.com/)
+* Lexoni rreth menaxherit të paketave[yarn](https://yarnpkg.com/en/docs/) 
 
 ## Installation
 
