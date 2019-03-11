@@ -92,7 +92,7 @@ Disa prej jush mund të duan të përdorin menaxherët e tjerë të paketave pë
 
 * Krijoni një projekt npm duke përdorur terminalin:
   * Krijo një folder të ri me `mkdir <folder_name>`
-  * Lundroni në folder me `cd <folder_name>`
+  * Shko në folder me `cd <folder_name>`
   * Exekuto `npm init -y` ose `npm init`
   * Instaloni një paketë lokale si React me `npm install react`
   * Kontrolloni file *package.json* dhe folder *node_modules/*
@@ -100,11 +100,11 @@ Disa prej jush mund të duan të përdorin menaxherët e tjerë të paketave pë
 * Lexoni rreth [npm](https://docs.npmjs.com/)
 * Lexoni rreth menaxherit të paketave[yarn](https://yarnpkg.com/en/docs/) 
 
-## Installation
+## Instalimi
 
-There are many approaches to getting started with a React application. The first we'll explore is a CDN, short for [content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network). Don't worry too much about CDNs now, because you will not use them in this book, but it makes sense to explain them briefly. Many companies use CDNs to host files publicly for their consumers. Some of these files are libraries like React, since the bundled React library is just a *react.js* JavaScript file.
+Ka shumë rruge për ndërtimin e një aplikacioni React. E para që do të shqyrtojmë është një CDN, i shkurtër për [content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network). Mos u shqetësoni shumë për CDN-të tani, sepse ju nuk do t'i përdorni ato në këtë libër, por ka kuptim t'i shpjegojmë shkurtimisht. Shumë kompani përdorin CDN-të për të depozituar filet publike për konsumatorët e tyre. Disa nga këto skedarë janë librari si React, pasi libraria lidhëse React është vetëm një skedar *react.js* JavaScript.
 
-To get started with React by using a CDN, find the `<script>` tag in your web page HTML that points to a CDN url. You will need two libraries: *react* and *react-dom*.
+Për të filluar me React duke përdorur një CDN, gjeni tagun`<script>` në faqen tuaj HTML që tregon për një url CDN. Do t'ju duhen dy librari: * react * dhe * react-dom *.
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~~
@@ -119,14 +119,14 @@ To get started with React by using a CDN, find the `<script>` tag in your web pa
 ></script>
 ~~~~~~~~
 
-You can also get React into your application by initializing it as node project. With a *package.json* file, you can install *react* and *react-dom* from the command line. However, the folder must be initialized as a npm project using `npm init -y` with a *package.json* file. You can install multiple node packages with npm:
+Ju gjithashtu mund të merrni React në aplikimin tuaj duke inicializuar atë si node projekt. Me një skedar * package.json *, mund të instaloni * react * dhe * react-dom * nga vija e komandës. Megjithatë, folder duhet të fillohet si një projekt npm duke përdorur `npm init -y` me një skedar * package.json *. Ju mund të instaloni paketa të shumta node me npm:
 
 {title="Command Line",lang="text"}
 ~~~~~~~~
 npm install react react-dom
 ~~~~~~~~
 
-This approach is often used to add React to an existing application managed with npm.
+Kjo rrugë shpesh përdoret për të shtuar React në një aplikacion ekzistues të menaxhuar me npm.
 
 You may also have to deal with [Babel](http://babeljs.io/) to make your application aware of JSX (the React syntax) and JavaScript ES6. Babel transpiles your code--that is, it converts it to vanilla JavaScript--so most modern browsers can interpret JavaScript ES6 and JSX. Because of this difficult setup, Facebook introduced *create-react-app* as a zero-configuration React solution. The next section will show you how to setup your application using this bootstrapping tool.
 
