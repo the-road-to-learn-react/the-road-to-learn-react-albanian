@@ -28,15 +28,15 @@ Nëse dëshironi të dini më shumë për arsyen pse zgjodha React ose për të 
 
 Për të ndjekur këtë libër, duhet të njiheni me bazat e zhvillimit të uebit, dmth. si të përdorni HTML, CSS dhe JavaScript. Gjithashtu ka sens të kuptojmë se si funksionojnë [APIs] (https://www.robinwieruch.de/what-is-an-api-javascript/), pasi ato do të mbulohen tërësisht. Gjithashtu, ju inkurajoj që të bashkoheni në grupin zyrtar [Slack Group] (https://slack-the-road-to-learn-react.wieruch.com/) të jeni pjesë e një komuniteti në rritje React ku mund të mësoni nga dhe të ndihmoni të tjeret.
 
-### Editor and Terminal
+### Editor dhe Terminal
 
-For the lessons, you will need a text editor or an IDE and terminal (command line tool). I have provided [a setup guide](https://www.robinwieruch.de/developer-setup/) if you need additional help. Optionally, we recommend you keep your projects in GitHub while conducting the exercises in this book. There is a [short guide](https://www.robinwieruch.de/git-essential-commands/) on how to use these tools. Github has excellent version control, so you can see what changes were made if you make a mistake or just want a more direct way to follow along.
+Për mësimet, do t'ju duhet një editor teksti ose IDE dhe terminali (command line tool). Unë kam dhënë [një udhëzues setup] (https://www.robinwieruch.de/developer-setup/) nëse keni nevojë për ndihmë shtesë. Opsionale, ne ju rekomandojmë që të mbani projektet tuaja në GitHub gjatë kryerjes së ushtrimeve në këtë libër. Ekziston një [udhëzues i shkurtër] (https://www.robinwieruch.de/git-essential-commands/) për mënyrën e përdorimit të këtyre mjeteve. Github ka kontroll të shkëlqyeshëm të versionit, kështu që mund të shihni se çfarë ndryshimesh janë bërë në qoftë se bëni një gabim ose thjesht dëshironi një mënyrë më të drejtpërdrejtë për të ndjekur së bashku.
 
-### Node and NPM
+### Node dhe NPM
 
-Finally, you will need an installation of [node and npm](https://nodejs.org/en/). Both are used to manage libraries you will need along the way. In this book, you will install external node packages via npm (node package manager). These node packages can be libraries or whole frameworks.
+Së fundi, do t'ju duhet një instalim i [node dhe npm] (https://nodejs.org/en/). Të dyja janë përdorur për të menaxhuar libraritë që do t'ju duhen përgjatë rrugës. Në këtë libër, ju do të instaloni paketa të node të jashtme nëpërmjet npm (menaxher i paketave të nodeve). Këto paketa nodesh mund të jenë librari ose framework të tëra.
 
-You can verify your versions of node and npm on the command line. If you don't get any output in the terminal, you need to install node and npm first. These are my versions at the time of writing this book:
+Ju mund të verifikoni versionet tuaja të nodes dhe npm në rreshtin e komandave. Nëse nuk merrni ndonjë dalje në terminal, ju duhet të instaloni node dhe npm fillimisht. Këto janë versionet e mia në kohën e shkrimit të këtij libri:
 
 {title="Command Line",lang="text"}
 ~~~~~~~~
@@ -46,38 +46,38 @@ npm --version
 *v6.4.1
 ~~~~~~~~
 
-The additional content of this section is a crash course in node and npm. It is not exhaustive, but it will cover all of the necessary tools. If you are familiar with both of them, you can skip this section.
+Përmbajtja shtesë e këtij seksioni është një kurs i node dhe npm. Nuk është gjithëpërfshirës, por do të mbulojë të gjitha mjetet e nevojshme. Nëse jeni të njohur me të dy, ju mund të kaloni këtë seksion.
 
-The **node package manager** (npm) installs external node packages from the command line. These packages can be a set of utility functions, libraries, or whole frameworks, and they are the dependencies of your application. You can either install these packages to your global node package folder, or to your local project folder.
+Menaxheri **i paketave të nodeve**(npm) instalon paketa të nodeve të jashtme nga command line. Këto paketa mund të jenë një sërë funksionesh të shërbimeve, librarive ose framework të tëra, dhe ato janë varësitë e aplikacionit tuaj. Ju mund të instaloni këto paketa në dosjen tuaj të paketës së paketave të nodeve ose në dosjen tuaj lokale të projektit.
 
-Global node packages are accessible from everywhere in the terminal, and only need to be installed to the global directory once. Install a global package by typing the following into a terminal:
+Paketat e nodeve globale janë të arritshme nga kudo në terminal dhe vetëm një herë duhet të instalohen në direktorinë globale. Instaloni një paketë globale duke shtypur në vijim një terminal:
 
 {title="Command Line",lang="text"}
 ~~~~~~~~
 npm install -g <package>
 ~~~~~~~~
 
-The `-g` flag tells npm to install the package globally. Local packages are used in your application by default. For our purposes, we will install React to the local directory terminal by typing:
+Flamuri `-g` tregon npm për të instaluar paketën globalisht. Paketat lokale përdoren në aplikacionin tuaj me parazgjedhje. Për qëllimet tona, ne do të instalojmë React në terminalin e drejtorisë lokale duke shtypur:
 
 {title="Command Line",lang="text"}
 ~~~~~~~~
 npm install react
 ~~~~~~~~
 
-The installed package will automatically appear in a folder called *node_modules/* and will be listed in the *package.json* file next to your other dependencies.
+Paketa e instaluar do të shfaqet automatikisht në një dosje të quajtur * node_modules / * dhe do të renditet në skedarin * package.json * pranë varësive tuaja të tjera.
 
-To initialize the *node_modules/* folder and the *package.json* file for your project, use the following npm command. Then, you can install new local packages via npm:
+Për të inicializuar skedarin * node_modules / * dhe * package.json * për projektin tuaj, përdorni komandën e mëposhtme npm. Pastaj, ju mund të instaloni paketa të reja lokale nëpërmjet npm:
 
 {title="Command Line",lang="text"}
 ~~~~~~~~
 npm init -y
 ~~~~~~~~
 
-The `-y` flag initializes all the defaults in your *package.json*. After initializing your npm project, you are ready to install new packages via `npm install <package>`.
+Flamuri `-y` inicializon të gjitha parazgjedhjet në * package.json * tuaj. Pas fillimit të projektit tuaj npm, ju jeni gati për të instaluar paketa të reja nëpërmjet `npm install <package>`.
 
-The *package.json* file allows you to share your project with other developers without sharing all the node packages. It will contain references to all node packages used in your project, called **dependencies**. Other users can copy a project without the dependencies using the references in *package.json*, where the references make it easy to install all packages using `npm install`. A `npm install` script will take all the dependencies listed in the *package.json* file and install them in the *node_modules/* folder.
+Paketa *package.json* ju lejon të ndani projektin tuaj me zhvilluesit e tjerë pa ndarë të gjitha paketat e nodeve. Do të përmbajë referenca për të gjitha paketat e nodeve të përdorura në projektin tuaj, të quajtura **dependencies**.Përdoruesit e tjerë mund të kopjojnë një projekt pa varësi duke përdorur referencat në * package.json *, ku referencat e bëjnë të lehtë instalimin e të gjitha paketave duke përdorur `npm install`.Skripti `npm install` do të marrë të gjitha varësitë e renditura në skedarin * package.json * dhe instaloni ato në dosjen * node_modules / *. 
 
-Finally, there's one more command to cover about npm:
+Së fundi, ka një komandë tjetër për të mbuluar rreth npm:
 
 {title="Command Line",lang="text"}
 ~~~~~~~~
