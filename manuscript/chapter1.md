@@ -222,14 +222,14 @@ Scriptet janë të përcaktuara në * package.json * tuaj, dhe aplikimi juaj baz
 
 ### Ushtrime:
 
-* `npm start` your application and visit the application in your browser (Exit the command by pressing Control + C)
-* Run the `npm test` script
-* Run the `npm run build` script and verify that a *build/* folder was added to your project (you can remove it afterward. Note that the build folder can be used later on to [deploy your application](https://www.robinwieruch.de/deploy-applications-digital-ocean/))
-* Familiarize yourself with the folder structure
-* Check the content of the files
-* Read about [npm scripts and create-react-app](https://github.com/facebookincubator/create-react-app)
+* `npm start` dhe vizitoni aplikacionin në browserin tuaj (Duke shtypur Control + C dil nga komand line)
+* Ekzekuto kodin `npm test` 
+* Ekzekuto kodin `npm run build`  dhe verifikoni që folderi   * build/ * u shtua në projektin tuaj (mund ta hiqni atë më pas.) Kini parasysh se folderi build  mund të përdoret më vonë në[deploy your application](https://www.robinwieruch.de/deploy-applications-digital-ocean/))
+* Njihuni me strukturën e folderave
+* Kontrolloni përmbajtjen e fileve
+* Lexoni rreth [npm scripts and create-react-app](https://github.com/facebookincubator/create-react-app)
 
-## Introduction to JSX
+## Hyrje në JSX
 
 Now we will get to know JSX, the syntax in React. As mentioned before, *create-react-app* has already bootstrapped a basic application for you, and all files come with their own default implementations. For now, the only file we will modify is the *src/App.js* file.
 
