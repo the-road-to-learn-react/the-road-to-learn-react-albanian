@@ -282,11 +282,11 @@ class App extends Component {
 <App />
 ~~~~~~~~
 
-**element** i kthyer është specifik për metodën `render()`. The components you instantiated earlier are made up of elements, so it is important to understand the differences between a component, an instance of a component, and an element.
+**element** i kthyer është specifik për metodën `render()`.Është e rëndësishme të kuptojmë dallimet midis një komponenti, një instance të një komponenti dhe një elementi.
 
-You should see where the App component is instantiated, else you couldn't see the rendered output in a browser. The App component is only the declaration, but not the usage. You can instantiate the component anywhere in your JSX with `<App />`. You will see later where this happens in this application.
+Duhet të shihni se ku komponenti i App instantohet, përndryshe nuk mund ta shihni produktin e dhënë në browser. Komponenti i App është vetëm deklarata, por jo përdorimi. Ju mund të instantoni komponentin kudo në JSX tuaj me `<App />`. Ju do të shihni më vonë kur kjo ndodh në këtë aplikacion.
 
-The content in the render block may look similar to HTML, but it is actually JSX. JSX allows you to mix HTML and JavaScript. It is powerful, but it can be confusing when you are used to separating the two languages. It is a good idea to start by using basic HTML in your JSX. Open the `App.js` file and remove all unnecessary HTML code as shown:
+Përmbajtja në bllokun e paraqitjes mund të duket ngjashëm me HTML, por në të vërtetë është JSX. JSX ju lejon të përzieni HTML dhe JavaScript. Është e fuqishme, por mund të jetë konfuze kur jeni mësuar ti ndani e dy gjuhët. Është një ide e mirë për të filluar duke përdorur HTML bazë në JSX tuaj. Hapni skedarin `App.js` dhe hiqni të gjithë kodin HTML të panevojshëm siç tregohet:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
@@ -305,8 +305,8 @@ class App extends Component {
 
 export default App;
 ~~~~~~~~
+Tani, vetëm ktheni HTML në metodën tuaj  `render () `  pa ndonjë JavaScript. Le të përkufizojmë "Welcome to the Road to learn Reac" si një variabel. Një variabel është vendosur në JSX nga kllapat gjarpërushe.
 
-Now, you only return HTML in your `render()` method without any JavaScript. Let's define the "Welcome to the Road to learn React" as a variable. A variable is set in JSX by curly braces.
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
