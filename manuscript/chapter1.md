@@ -265,9 +265,10 @@ class App extends Component {
 export default App;
 ~~~~~~~~
 
-Don't worry if you're confused by the import/export statements and class declaration now. These are features of JavaScript ES6 we will revisit in a later chapter.
+Mos u shqetësoni nëse jeni të hutuar nga deklaratat e import / eksportit dhe deklarimit të klasës tani. Këto janë karakteristika të JavaScript ES6 ne do ti rishikojmë në një kapitull të mëvonshëm.
 
-In the file you should see a **React ES6 class component** with the name App. This is a component declaration. After you have declared a component, you can use it as an element anywhere in your application. It will produce an **instance** of your **component** or, in other words, the component gets instantiated.
+Në file duhet të shihni një ** React ES6 class component ** me emrin App. Ky është një deklarim komponenti. Pasi të keni deklaruar një komponent, mund ta përdorni si element kudo në aplikacionin tuaj. Ai do të prodhojë një ** instance** të ** komponentit tuaj ** ose, me fjalë të tjera, komponenti do të instanohet.
+
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~~
@@ -276,12 +277,12 @@ class App extends Component {
   ...
 }
 
-// component usage (also called instantiation for a class)
-// creates an instance of the component
+// perdorimi i komponentit 
+// krijon nje instance te komponentit
 <App />
 ~~~~~~~~
 
-The returned **element** is specified in the `render()` method. The components you instantiated earlier are made up of elements, so it is important to understand the differences between a component, an instance of a component, and an element.
+**element** i kthyer është specifik për metodën `render()`. The components you instantiated earlier are made up of elements, so it is important to understand the differences between a component, an instance of a component, and an element.
 
 You should see where the App component is instantiated, else you couldn't see the rendered output in a browser. The App component is only the declaration, but not the usage. You can instantiate the component anywhere in your JSX with `<App />`. You will see later where this happens in this application.
 
