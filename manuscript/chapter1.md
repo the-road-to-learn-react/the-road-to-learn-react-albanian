@@ -186,13 +186,13 @@ hackernews/
 
 Ky është një ndarje e folderave dhe fileve:
 
-* **README.md:** The .md extension indicates the file is a markdown file. Markdown is used as a lightweight markup language with plain text formatting syntax. Many source code projects come with a *README.md* file to give you initial instructions about the project. When pushing your project to a platform such as GitHub, the *README.md* file usually displays information about the content contained in the repository. Because you used *create-react-app*, your *README.md* should be the same as the official [create-react-app GitHub repository](https://github.com/facebookincubator/create-react-app).
+* **README.md:** README.md: Prapashtesa .md tregon se skedari është një skedar markdown. Markdown është përdorur si një gjuhë markup me sintaksë të thjeshtë . Shumë projekte të kodit burimor vijnë me një skedar *README.md* për t'ju dhënë udhëzime fillestare rreth projektit. Kur kaloni projektin tuaj në një platformë të tillë si GitHub, skedari *README.md* zakonisht shfaq informacion rreth përmbajtjes së përmbajtjes në respository. Për shkak se keni përdorur *create-react-app*, *README.md* juaj duhet të jetë i njëjtë me [create-react-app GitHub repository](https://github.com/facebookincubator/create-react-app).
 
-* **node_modules/:** This folder contains all node packages that have been installed via npm. Since you used *create-react-app*, there should already be a couple of node modules installed for you. You will rarely touch this folder, because node packages are generally installed and uninstalled with npm from the command line.
+* **node_modules/:** Ky folder përmban të gjitha paketat e nodeve që janë instaluar përmes npm. Pasi keni përdorur * create-react-app * , duhet të jenë instaluar tashmë disa node module për ju. Ju rrallë do të prekni këtë folder, sepse paketat e nodeve përgjithësisht janë instaluar dhe çinstaluar me npm nga rreshti i komandës.
 
-* **package.json:** This file shows you a list of node package dependencies and other project configurations.
+* **package.json:** Ky file ju tregon një listë të varësive të nodeve dhe konfigurimeve të tjera të projektit.
 
-* **.gitignore:** This file displays all files and folders that shouldn't be added to your git repository when using git; such files and folders should only be located in your local project. The *node_modules/* folder is one example. It is enough to share the *package.json* file with others, so they can install dependencies on their end with `npm install` without your dependency folder.
+* **.gitignore:** Ky file shfaq të gjithë filet dhe folderat që nuk duhet të shtohen në repositorin tuaj git kur përdorni git; filet dhe folder të tillë duhet të gjenden vetëm në projektin tuaj lokal. Folderi * node_modules / * është një shembull. Mjafton të ndash file * package.json * me të tjerët, kështu që ata mund të instalojnë varësi në fundin e tyre me `npm install` pa folderin tuaj të varësisë.
 
 * **public/:** This folder holds development files, such as *public/index.html*. The index is displayed on localhost:3000 when developing your app. The boilerplate takes care of relating this index with all the scripts in *src/*.
 
