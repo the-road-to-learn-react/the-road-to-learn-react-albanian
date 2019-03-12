@@ -200,27 +200,27 @@ Ky është një ndarje e folderave dhe fileve:
 
 * **manifest.json** dhe **serviceWorker.js:** Këto file nuk do të përdoren për këtë projekt, prandaj ju mund t'i injoroni ato për momentin.
 
-In the beginning, everything you need is located in the *src/* folder. The main focus lies on the *src/App.js* file which is used to implement React components. It will be used to implement your application, but later you might want to split up your components into multiple files, where each file maintains one or more components on its own.
+Në fillim, gjithçka që ju nevojitet ndodhet në folderin  * src / *. Fokusi kryesor qëndron në file* src / App.js * i cili përdoret për të implementuar komponentët React. Do të përdoret për të implementuar aplikacionin tuaj, por më vonë ju mund të dëshironi të ndani komponentet tuaja në file të shumtë, ku secili file ruan një ose më shumë komponente më vete.
 
-Additionally, you will find a *src/App.test.js* file for your tests, and a *src/index.js* as an entry point to the React world. You will get to know both files intimately in a later chapter. There is also a *src/index.css* and a *src/App.css* file to style your general application and components, which comes with the default style when you open them. You will modify them later as well.
+Përveç kësaj, do të gjeni një file * src / App.test.js * për testimet tuaja dhe një * src / index.js * si një pikë hyrje në botën React. Ju do të njihni të dy filet në mënyrë të imtësishme në një kapitull të mëvonshëm. Ekziston edhe një file * src / index.css * dhe një * src / App.css * për të dizenjuar aplikacionin tuaj të përgjithshëm dhe komponentët, e cila vjen me stilin default kur i hapni ato. Ju mund t'i modifikoni ato edhe më vonë.
 
-The *create-react-app* application is a npm project you can use to install and uninstall node packages. It comes with the following npm scripts for your command line:
+Aplikimi * create-react-app * është një projekt npm që mund të përdorni për të instaluar dhe çinstaluar paketat e nodeve. Ajo vjen me skriptet e mëposhtme npm komand line:
 
 {title="Command Line",lang="text"}
 ~~~~~~~~
-# Runs the application in http://localhost:3000
+# Ekzekuton aplikacionin në http://localhost:3000
 npm start
 
-# Runs the tests
+# Ekzekuton testin
 npm test
 
-# Builds the application for production
+# Ndërton aplikacionin për production
 npm run build
 ~~~~~~~~
 
-The scripts are defined in your *package.json*, and your basic React application is bootstrapped. The following exercises will finally allow you to run your bootstrapped application in a browser.
+Scriptet janë të përcaktuara në * package.json * tuaj, dhe aplikimi juaj bazë Reacteshte  bootstraped. Ushtrimet e mëposhtme më në fund do t'ju lejojnë të përdorni aplikacionin tuaj bootstrapped në browser.
 
-### Exercises:
+### Ushtrime:
 
 * `npm start` your application and visit the application in your browser (Exit the command by pressing Control + C)
 * Run the `npm test` script
