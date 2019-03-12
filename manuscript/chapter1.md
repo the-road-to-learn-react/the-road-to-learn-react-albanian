@@ -194,11 +194,11 @@ Ky është një ndarje e folderave dhe fileve:
 
 * **.gitignore:** Ky file shfaq të gjithë filet dhe folderat që nuk duhet të shtohen në repositorin tuaj git kur përdorni git; filet dhe folder të tillë duhet të gjenden vetëm në projektin tuaj lokal. Folderi * node_modules / * është një shembull. Mjafton të ndash file * package.json * me të tjerët, kështu që ata mund të instalojnë varësi në fundin e tyre me `npm install` pa folderin tuaj të varësisë.
 
-* **public/:** This folder holds development files, such as *public/index.html*. The index is displayed on localhost:3000 when developing your app. The boilerplate takes care of relating this index with all the scripts in *src/*.
+* **public/:** Ky folder përmban file zhvillimi, të tillë si  *public/index.html*. Indeksi shfaqet në localhost: 3000 kur zhvilloni aplikacionin tuaj. Boilerplate kujdeset për të lidhur këtë indeks me të gjitha skriptet në *src/*.
 
-* **build/** This folder is created when you build the project for production, as it holds all of the production files. When building your project for production, all the source code in the *src/* and *public/* folders are bundled and placed in the build folder.
+* **build/** Ky folder krijohet kur ndërthurni projektin në production, pasi mban të gjithë production files. Kur ndërtoni projektin tuaj në production, të gjithë kodin në folderat  * src / * dhe * public / * bllokohet dhe vendoset në  folderin build.
 
-* **manifest.json** and **serviceWorker.js:** These files won't be used for this project, so you can ignore them for now.
+* **manifest.json** dhe **serviceWorker.js:** Këto file nuk do të përdoren për këtë projekt, prandaj ju mund t'i injoroni ato për momentin.
 
 In the beginning, everything you need is located in the *src/* folder. The main focus lies on the *src/App.js* file which is used to implement React components. It will be used to implement your application, but later you might want to split up your components into multiple files, where each file maintains one or more components on its own.
 
