@@ -231,7 +231,7 @@ Scriptet janë të përcaktuara në * package.json * tuaj, dhe aplikimi juaj baz
 
 ## Hyrje në JSX
 
-Now we will get to know JSX, the syntax in React. As mentioned before, *create-react-app* has already bootstrapped a basic application for you, and all files come with their own default implementations. For now, the only file we will modify is the *src/App.js* file.
+Tani do të njohim JSX, sintaksën në React. Siç u përmend më parë, * create-react-app * ka nisur tashmë një aplikacion bazë për ju, dhe të gjitha filet vijnë me implementimet e tyre të paracaktuara. Tani për tani, file i vetëm që do të modifikojmë është *src/App.js* file.
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
