@@ -339,7 +339,7 @@ Ju mund të keni vënë re atributin `className`. Ai pasqyron atributin standard
 
 * Përcaktoni më shumë variabla dhe i bëni ato në JSX
   * Përdorni një objekt kompleks për të përfaqësuar një përdorues me një emër dhe mbiemër
-  * Render the user properties in JSX
+  * Pasqyroni detajet e perdoruesit në JSX
 * Lexoni rreth [JSX](https://reactjs.org/docs/introducing-jsx.html)
 * Lexoni rreth [React components, elements and instances](https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html)
 
@@ -376,7 +376,7 @@ const helloWorld = {
 helloWorld.text = 'Bye Bye React';
 ~~~~~~~~
 
-There are varying opinions about when to use *const* and when to use *let*. I would recommend using `const` whenever possible to show the intent of keeping your data structures immutable, so you only have to worry about the values contained in objects and arrays. Immutability is embraced in the React ecosystem, so `const` should be your default choice when you define a variable, though it's not really about immutability, but about assigning variables only once. It shows the intent of not changing (re-assigning) the variable even though its content can be changed.
+Ka mendime të ndryshme rreth asaj se kur duhet përdorur *const* dhe kur duhet të përdorim *let*. Unë do të rekomandoja përdorimin e `const` sa herë që të jetë e mundur për të treguar qëllimin e mbajtjes së strukturave tuaja të të dhënave të pandryshueshme, kështu që ju duhet vetëm të shqetësoheni për vlerat që përmbahen në objekte dhe arrays. Pandryshueshmëria përqafohet në ekosistemin React, kështu që `const` duhet të jetë zgjedhja juaj e parazgjedhur kur përcaktoni një variabel, megjithëse nuk ka të bëjë me ndryshueshmërinë, por për caktimin e variablave vetëm një herë. Tregon qëllimin e mos ndryshimit (ri-caktimit) të variables edhe pse përmbajtja e tij mund të ndryshohet.
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
@@ -399,7 +399,7 @@ class App extends Component {
 export default App;
 ~~~~~~~~
 
-In your application, we will use `const` and `let` over `var` for the rest of the book.
+Në aplikimin tuaj, ne do të përdorim `const` dhe` let` mbi `var` për pjesën tjetër të librit.
 
 ### Exercises:
 
