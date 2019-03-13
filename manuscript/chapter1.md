@@ -331,13 +331,13 @@ class App extends Component {
 export default App;
 ~~~~~~~~
 
-Start your application on the command line with `npm start` to verify the changes you've made.
+Nisni aplikacionin tuaj në command line me `npm start` për të verifikuar ndryshimet që keni bërë.
 
-You might have noticed the `className` attribute. It reflects the standard `class` attribute in HTML. JSX had replaced a handful of internal HTML attributes, but you can find all the [supported HTML attributes in React's documentation](https://reactjs.org/docs/dom-elements.html#all-supported-html-attributes), which all follow the camelCase convention. On your way to learn React, expect to run across more JSX specific attributes.
+Ju mund të keni vënë re atributin `className`. Ai pasqyron atributin standard në HTML 'class' . JSX ka zëvendësuar një pjesë të vogël të atributeve të brendshme HTML, por mund të gjeni të gjitha [atributet HTML të mbështetura në dokumentacionin e React] (https://reactjs.org/docs/dom-elements.html#all-supported-html-attributes), të cilat të gjitha ndjekin konventën camelCase. Në rrugën tuaj për të mësuar React, prisni të shkoni në më shumë atribute të veçanta JSX.
 
-### Exercises:
+### Ushtrime:
 
-* Define more variables and render them in JSX
+* Përcaktoni më shumë variabla dhe i bëni ato në JSX
   * Use a complex object to represent a user with a first name and last name
   * Render the user properties in JSX
 * Read about [JSX](https://reactjs.org/docs/introducing-jsx.html)
