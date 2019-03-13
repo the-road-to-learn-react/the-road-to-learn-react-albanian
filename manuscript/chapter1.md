@@ -338,14 +338,14 @@ Ju mund të keni vënë re atributin `className`. Ai pasqyron atributin standard
 ### Ushtrime:
 
 * Përcaktoni më shumë variabla dhe i bëni ato në JSX
-  * Use a complex object to represent a user with a first name and last name
+  * Përdorni një objekt kompleks për të përfaqësuar një përdorues me një emër dhe mbiemër
   * Render the user properties in JSX
-* Read about [JSX](https://reactjs.org/docs/introducing-jsx.html)
-* Read about [React components, elements and instances](https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html)
+* Lexoni rreth [JSX](https://reactjs.org/docs/introducing-jsx.html)
+* Lexoni rreth [React components, elements and instances](https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html)
 
-## ES6 const and let
+## ES6 të kundërtat dhe pro-të
 
-Notice that we declared the variable `helloWorld` with a `var` statement. JavaScript ES6 comes with two more ways to declare variables: `const` and `let`. In JavaScript ES6, you will rarely find `var` anymore. A variable declared with `const` cannot be re-assigned or re-declared, and cannot be changed or modified. Once the variable is assigned, you cannot change it:
+Vini re se ne e kemi deklaruar variablen `helloWorld` me një deklaratë ` var`. JavaScript ES6 vjen me dy mënyra të tjera për të deklaruar variablat: `const` dhe` let`. Në JavaScript ES6, rrallë do të gjeni më `var` . Një variabel e deklaruar me `const` nuk mund të ricaktohet ose ribotohet dhe nuk mund të ndryshohet ose modifikohet. Pasi të jetë caktuar variabli, nuk mund ta ndryshoni atë:
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~~
@@ -354,7 +354,7 @@ const helloWorld = 'Welcome to the Road to learn React';
 helloWorld = 'Bye Bye React';
 ~~~~~~~~
 
-Conversely, a variable declared with `let` can be modified:
+Në anën tjetër, një variabel i deklaruar me `let` mund të modifikohet:
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~~
@@ -363,9 +363,9 @@ let helloWorld = 'Welcome to the Road to learn React';
 helloWorld = 'Bye Bye React';
 ~~~~~~~~
 
-**TIP:** Declare variables with `let` if you think you'll want to re-assign it later on.
+**TIP:** Shpallni variablat me `let` nëse mendoni se do të dëshironi ta ricaktoni më vonë.
 
-Note that a variable declared directly with `const` cannot be modified. However, when the variable is an array or object, the values it holds can get updated through indirect means:
+Vini re se një variabel e deklaruar direkt me `const` nuk mund të modifikohet. Megjithatë, kur variabela është një array ose objekt, vlera që ajo mban mund të modifikohet indirekt:
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~~
