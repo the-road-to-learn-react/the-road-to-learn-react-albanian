@@ -478,10 +478,10 @@ Përfitimi më i dobishëm i HMR është që ju të mund të mbani gjendjen e ap
 
 ### Ushtrime:
 
-* Change your *src/App.js* source code a few times to see HMR in action
-* Watch the first 10 minutes of [Live React: Hot Reloading with Time Travel](https://www.youtube.com/watch?v=xsSnOQynTHs) by Dan Abramov
+* Ndryshoni *src/App.js* kodin burim disa herë për të parë HMR në veprim
+* Shikoni 10 minutat e para të [Live React: Hot Reloading with Time Travel](https://www.youtube.com/watch?v=xsSnOQynTHs) nga Dan Abramov
 
-## Complex JavaScript in JSX
+## JavaScript në JSX
 
 So far, you have rendered a few primitive variables in your JSX. Now, we will render a list of items. The list will contain sample data in the beginning, but later we will learn how to fetch the data from an external API.
 
