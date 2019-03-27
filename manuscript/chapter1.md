@@ -401,17 +401,17 @@ export default App;
 
 Në aplikimin tuaj, ne do të përdorim `const` dhe` let` mbi `var` për pjesën tjetër të librit.
 
-### Exercises:
+### Ushtrime:
 
-* Read about [ES6 const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
-* Read about [ES6 let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
-* Gain an understanding of immutable data structures:
-  * Why do they make sense in programming?
-  * Why are they embraced in React and its ecosystem?
+* Lexoni rreth [ES6 const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+* Lexoni rreth [ES6 let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+* Gjeni një kuptim të strukturave të të dhënave të pandryshueshme:
+  * Pse ata kanë kuptim në programim?
+  * Pse janë përqafuar në React dhe në ekosistemin e saj?
 
 ## ReactDOM
 
-The App component is located in your entry point to the React world: the *src/index.js* file.
+Komponenti App ndodhet në pikën hyrëse të React file *src/index.js* .
 
 {title="src/index.js",lang="javascript"}
 ~~~~~~~~
@@ -426,9 +426,9 @@ ReactDOM.render(
 );
 ~~~~~~~~
 
-`ReactDOM.render()` uses a DOM node in your HTML to replace it with JSX. It's a way to integrate React in any foreign application easily, and you can use `ReactDOM.render()` multiple times across your application. You can use it to bootstrap simple JSX syntax, a React component, multiple React components, or an entire application. In a plain React application, you would only use it once to bootstrap the component tree.
+`ReactDOM.render()` përdor një nyje DOM në HTML tuaj për ta zëvendësuar atë me JSX. Kjo është një mënyrë për të integruar React në çdo aplikim të huaj lehtë, dhe ju mund të përdorni `ReactDOM.render()` disa herë në aplikacionin tuaj. Ju mund ta përdorni për të bootstrap sintaksë të thjeshtë JSX, një komponent React, komponente të shumta React ose një aplikacion të tërë. Në një aplikim të thjeshtë React, ju do ta përdorni vetëm një herë për të nisur pemën e komponentit.
 
-`ReactDOM.render()` expects two arguments. The first argument is for rendering the JSX. The second argument specifies the place where the React application hooks into your HTML. It expects an element with an `id='root'`, found in the *public/index.html* file.
+`ReactDOM.render()` pret dy argumente. Argumenti i parë është për renderimin e JSX. Argumenti i dytë specifikon vendin ku aplikacioni React hyn në HTML tuaj. Ajo pret një element me një `id='root'`, gjetur në file  *public/index.html*.
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~~
@@ -438,18 +438,18 @@ ReactDOM.render(
 );
 ~~~~~~~~
 
-During implementation, `ReactDOM.render()` takes your App component, though it can also pass simple JSX. It doesn't require a component instance.
+Gjatë implementimit, `ReactDOM.render()` merr komponentin tuaj të aplikacionit, dhe mund ti kalojë thjeshtë JSX . Nuk kërkon një instancë komponentësh.
 
-### Exercises:
+### Ushtrime:
 
-* Open the *public/index.html* to see where the React application hooks into your HTML
-* Read about [rendering elements in React](https://reactjs.org/docs/rendering-elements.html)
+* Hapni *public/index.html* tpër të parë se ku aplikacioni React hyn në HTML tuaj
+* Lexoni rreth  [rendering elements in React](https://reactjs.org/docs/rendering-elements.html)
 
-## Hot Module Replacement
+## Hot Module Replacement (HMR)-Zëvendësimi i modulit 
 
-Hot Module Replacement can be used in the *src/index.js* file to improve your experience as a developer. By default, *create-react-app* will cause the browser to refresh the page whenever its source code is modified. Try it by changing the `helloWorld` variable in your *src/App.js* file, which should cause the browser to refresh the page. There is a better way of handling source code changes during development, however.
+HMR mund të përdoret në file *src/index.js* për të përmirësuar përvojën tuaj si zhvillues. Default, *create-react-app* do të bëjë që browseri të rifreskojë faqen sa herë që modifikohet kodit i tij burimor. Provoni duke ndryshuar variablin `helloWorld` në file *src/App.js*, i cili duhet të bëjë që shfletuesi të rifreskojë faqen. Megjithatë, ekziston një mënyrë më e mirë për të trajtuar ndryshimet e kodit burimor gjatë zhvillimit.
 
-Hot Module Replacement (HMR) is a tool for reloading your application in the browser without the page refresh. You can activate it in *create-react-app* by adding the following configuration to your *src/index.js* file:
+Hot Module Replacement (HMR) është një mjet për rifreskimin e aplikacionit tuaj në shfletues pa rifreskimin e faqes. Ju mund ta aktivizoni atë në *create-react-app* duke shtuar konfigurimin e mëposhtëm tek file juaj  *src/index.js* :
 
 {title="src/index.js",lang="javascript"}
 ~~~~~~~~
@@ -470,13 +470,13 @@ if (module.hot) {
 # leanpub-end-insert
 ~~~~~~~~
 
-Again, change the `helloWorld` variable in your *src/App.js* file. The browser shouldn't refresh, but the application will reload and show the correct output. HMR comes with multiple advantages:
+Përsëri, ndryshoni variablën `helloWorld` në file *src/App.js* . Shfletuesi nuk duhet të rifreskohet, por aplikacioni do të rifreskojë dhe do të tregojë daljen e saktë. HMR vjen me përparësi të shumëfishta:
 
 Imagine you are debugging your code with `console.log()` statements. These statements will stay in your developer console, even though you changed your code, because the browser doesn't refresh the page anymore. In a growing application, page refreshes delay productivity; HMR removes this obstacle by eliminating the incremental time loss it takes for a browser to reload.
 
 The most useful benefit of HMR is that you can keep the application state after the application reloads. For instance, assume you have a dialog or wizard in your application with multiple steps, and you are on step 3. Without HMR, you make changes to the source code and your browser refreshes the page. You would then have to open the dialog again and navigate from step 1 to step 3 each time. With HMR your dialog stays open at step 3, so you can debug from the exact point you're working on. With the time saved from page loads, this makes HMR an invaluable tool for React developers.
 
-### Exercises:
+### Ushtrime:
 
 * Change your *src/App.js* source code a few times to see HMR in action
 * Watch the first 10 minutes of [Live React: Hot Reloading with Time Travel](https://www.youtube.com/watch?v=xsSnOQynTHs) by Dan Abramov
