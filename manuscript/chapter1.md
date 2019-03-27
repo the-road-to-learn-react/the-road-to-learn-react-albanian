@@ -472,7 +472,7 @@ if (module.hot) {
 
 Përsëri, ndryshoni variablën `helloWorld` në file *src/App.js* . Shfletuesi nuk duhet të rifreskohet, por aplikacioni do të rifreskojë dhe do të tregojë daljen e saktë. HMR vjen me përparësi të shumëfishta:
 
-Imagine you are debugging your code with `console.log()` statements. These statements will stay in your developer console, even though you changed your code, because the browser doesn't refresh the page anymore. In a growing application, page refreshes delay productivity; HMR removes this obstacle by eliminating the incremental time loss it takes for a browser to reload.
+Imagjinoni që po bëni debug kodin tuaj me statement `console.log()`. Këto statement do të qëndrojnë në developer console, edhe pse keni ndryshuar kodin tuaj, sepse shfletuesi nuk e rifreskon më faqen. HMR e eliminon humbjen e kohës në rritje që duhet për të rifreskuar një shfletues.
 
 The most useful benefit of HMR is that you can keep the application state after the application reloads. For instance, assume you have a dialog or wizard in your application with multiple steps, and you are on step 3. Without HMR, you make changes to the source code and your browser refreshes the page. You would then have to open the dialog again and navigate from step 1 to step 3 each time. With HMR your dialog stays open at step 3, so you can debug from the exact point you're working on. With the time saved from page loads, this makes HMR an invaluable tool for React developers.
 
