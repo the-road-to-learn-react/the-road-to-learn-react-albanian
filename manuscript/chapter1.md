@@ -483,9 +483,9 @@ Përfitimi më i dobishëm i HMR është që ju të mund të mbani gjendjen e ap
 
 ## JavaScript në JSX
 
-So far, you have rendered a few primitive variables in your JSX. Now, we will render a list of items. The list will contain sample data in the beginning, but later we will learn how to fetch the data from an external API.
+Deri më tani, ju keni dhënë disa variabla primitivë në JSX tuaj. Tani, do të bëjmë një listë të artikujve. Lista do të përmbajë të dhënat e mostrës në fillim, por më vonë do të mësojmë se si të marrim të dhënat nga një API i jashtëm.
 
-First you have to define the list of items:
+Së pari ju duhet të përcaktoni listën e artikujve:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
@@ -518,9 +518,9 @@ class App extends Component {
 }
 ~~~~~~~~
 
-The sample data represents information we will fetch from an API later on. Items in this list each have a title, a url, and an author, as well an identifier, points (which indicate how popular an article is), and a count of comments.
+Të dhënat e mostrës përfaqësojnë informacionin që do të marrim nga një API më vonë. Artikujt në këtë listë secili kanë një titull, një url dhe një autor, si dhe një identifikues, pikat (të cilat tregojnë se si një artikull është i popullarizuar) dhe numërimin e komenteve.
 
-Now you can use the [built-in JavaScript map functionality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) in JSX, which iterates over a list of items to display them according to specific attributes. Again, we use curly braces to encapsulate the JavaScript expression in JSX:
+Tani ju mund të përdorni [built-in JavaScript map functionality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) në JSX, e cila përsëritet mbi një listë të artikujve për t'i shfaqur ato sipas atributeve specifike. Përsëri, ne përdorim kllapat gjarpërushe për enkapsulimmin e shprehjeve JavaScript në JSX:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
@@ -541,7 +541,7 @@ class App extends Component {
 export default App;
 ~~~~~~~~
 
-Using JavaScript alongside HTML in JSX is very powerful. For a different task you may have used `map` to convert one list of items to another. This time, we used `map` to convert a list of items to HTML elements.
+Përdorimi i JavaScript së bashku me HTML në JSX është shumë i fuqishëm. Për një detyrë tjetër ju mund të keni përdorur `map` për të kthyer një listë të artikujve në një tjetër. Këtë herë, ne përdorëm `map` për të kthyer një listë të artikujve në elementë HTML.
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~~
@@ -554,7 +554,7 @@ console.log(newArray);
 // expected output: Array [2, 8, 18, 32]
 ~~~~~~~~
 
-So far, only the `title` is displayed for each item. Let's experiment with more of the item's properties:
+Deri më tani, vetëm 'titulli' shfaqet për çdo artikull. Le të eksperimentojmë me më shumë nga item's properties:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
@@ -584,7 +584,7 @@ class App extends Component {
 export default App;
 ~~~~~~~~
 
-Note how the `map` function is inlined in your JSX. Each item property is displayed with a `<span>` tag, and the url property of the item is in the `href` attribute of the anchor tag.
+Vini re se funksioni `map` është i përvijuar në JSX tuaj. Secili item shfaqet me një tag `<span>` dhe prona e url e item është në atributin `href` të tagit të ankorimit.
 
 React will display each item, but you can still do more to help React embrace its full potential. By assigning a key attribute to each list element, React can identify modified items when the list changes. These sample list items come with an identifier:
 
