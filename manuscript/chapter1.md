@@ -584,9 +584,9 @@ class App extends Component {
 export default App;
 ~~~~~~~~
 
-Vini re se funksioni `map` është i përvijuar në JSX tuaj. Secili item shfaqet me një tag `<span>` dhe prona e url e item është në atributin `href` të tagit të ankorimit.
+Vini re se funksioni `map` është i përvijuar në JSX tuaj. Secili element shfaqet me një tag `<span>` dhe prona e url e elementit është në atributin `href` të tagit të ankorimit.
 
-React will display each item, but you can still do more to help React embrace its full potential. By assigning a key attribute to each list element, React can identify modified items when the list changes. These sample list items come with an identifier:
+React do të shfaqë çdo element, por përsëri mund të bëni më shumë për të ndihmuar React të përqafojë potencialin e tij të plotë. Duke caktuar një atribut kryesor në secilin element të listës, React mund të identifikojë elementët e modifikuar kur ndryshon lista. Këto elemente të listës së mostrës vijnë me një identifikues:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
@@ -606,7 +606,7 @@ React will display each item, but you can still do more to help React embrace it
 })}
 ~~~~~~~~
 
-Make sure that the key attribute is a stable identifier. Avoid using the index of the item in the array, because the array index is not stable. If the list changes its order, for example, React will not be able to identify the items properly.
+Sigurohuni që atributi kryesor është një identifikues i qëndrueshëm. Shmangni përdorimin e indeksit të elementit në grup, sepse indeksi i grupeve nuk është i qëndrueshëm. Nëse lista ndryshon rendin e saj, për shembull, React nuk do të jetë në gjendje të identifikojë elementet siç duhet.
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
@@ -620,15 +620,15 @@ Make sure that the key attribute is a stable identifier. Avoid using the index o
 })}
 ~~~~~~~~
 
-Start your app in a browser, and you should see both items of the list displayed.
+Nisni aplikacionin tuaj në një shfletues dhe duhet të shihni të dyja elementët e listës të shfaqur.
 
-### Exercises:
+### Ushtrime:
 
-* Read about [React lists and keys](https://reactjs.org/docs/lists-and-keys.html)
-* Recap the [standard built-in array functionalities in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/)
-* Use more JavaScript expressions on your own in JSX
+* Lexoni rreth [React lists and keys](https://reactjs.org/docs/lists-and-keys.html)
+* Lexoni rreth [standard built-in array functionalities in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/)
+* Përdorni më shumë shprehje JavaScript në JSX.
 
-## ES6 Arrow Functions
+## Funksionet e shigjetave ES6
 
 JavaScript ES6 introduced arrow functions expressions, which are shorter than a function expressions.
 
@@ -758,26 +758,26 @@ The `Component` class encapsulates all the implementation details of a React com
 
 Methods exposed by a React `Component` are its public interface. One of these methods must be overridden, while the others don't need to be overridden. You will learn about these when we discuss lifecycle methods later. The `render()` method has to be overridden, because it defines the output of a React `Component`, so it must be defined. These are the basics of JavaScript ES6 classes, and how they are used in React to extend them to components.
 
-### Exercises:
+### Ushtrime:
 
-* Read about [JavaScript fundamentals before learning React](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/)
-* Read about [ES6 classes](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes)
+* Lexoni rreth  [JavaScript fundamentals before learning React](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/)
+* Lexoni rreth  [ES6 classes](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes)
 
 {pagebreak}
 
-Congratulations, you have learned to bootstrap your first React application! Let's recap:
+Urime, ju keni mësuar të bootstrap aplikimin tuaj të parë React! Le të radhisim:
 
 * **React**
-  * Create-react-app bootstraps a React application
-  * JSX mixes up HTML and JavaScript to define the output of React components in their render methods
-  * Components, instances, and elements are different items in React
-  * `ReactDOM.render()` is an entry point for a React application to hook React into the DOM
-  * Built-in JavaScript functionalities can be used in JSX
-  * Map can be used to render a list of items as HTML elements
+  * Create-react-app bootstraps një aplikim React
+  * JSX përzien HTML dhe JavaScript për të përcaktuar prodhimin e komponentëve të React në metodat e tyre të paraqitjes
+  * Komponentët, instancat dhe elementet janë elemente gjëra të ndryshme në React
+  * `ReactDOM.render()` është një pikë hyrjeje për një aplikim React për të lidhur React në DOM
+  * Funksionet e integruara JavaScript mund të përdoren në JSX
+  * Harta mund të përdoret për të paraqitur një listë të items si elementë HTML
 * **ES6**
-  * Variable declarations with `const` and `let` can be used for specific use cases
-  * Use const over let in React applications
-  * Arrow functions can be used to keep your functions concise
-  * Classes are used to define components in React by extending them
+  * Deklarimi i variablave me `const` dhe` let` mund të përdoren për raste specifike përdorimi
+  * Përdorni const mbi aplikacionet React
+  * Funksionet e shigjetës mund të përdoren për të mbajtur funksionet tuaja në mënyrë koncize
+  * Klasat përdoren për të përcaktuar komponentët në React duke i zgjeruar ato
 
-Now that you've completed the first chapter, it's advisable to experiment with the source code you have written so far and see what changes you can make on your own. You can find the source code in the [official repository](https://github.com/the-road-to-learn-react/hackernews-client/tree/5.1).
+Tani që keni përfunduar kapitullin e parë, është e këshillueshme që të eksperimentoni me kodin burimor që keni shkruar deri më tani dhe shihni se çfarë ndryshimesh mund të bëni vetë. Kodi burimor mund të gjendet në [official repository](https://github.com/the-road-to-learn-react/hackernews-client/tree/5.1).
