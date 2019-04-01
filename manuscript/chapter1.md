@@ -630,7 +630,7 @@ Nisni aplikacionin tuaj në një shfletues dhe duhet të shihni të dyja element
 
 ## Funksionet e shigjetave ES6
 
-JavaScript ES6 introduced arrow functions expressions, which are shorter than a function expressions.
+JavaScript ES6 prezantoi funksionet shprehje shigjetë , të cilat janë më të shkurtër se një funksion shprehje.
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~~
@@ -641,7 +641,7 @@ function () { ... }
 () => { ... }
 ~~~~~~~~
 
-You can remove the parentheses in an arrow function expression if it only has one argument, but you have to keep the parentheses if it gets multiple arguments:
+Ju mund të hiqni kllapat në një shprehje të shigjetës së funksionit nëse ka vetëm një argument, por ju duhet të mbani kllapa nëse ai merr shumë argumente:
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~~
@@ -658,7 +658,7 @@ item, key => { ... }
 (item, key) => { ... }
 ~~~~~~~~
 
-You can also write `map` functions more concisely with an ES6 arrow function:
+Ju gjithashtu mund të shkruani funksione `hartë` në mënyrë më konçize me një funksion shigjetë ES6:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
@@ -678,7 +678,7 @@ You can also write `map` functions more concisely with an ES6 arrow function:
 })}
 ~~~~~~~~
 
-You can remove the *block body*, the curly braces, with the ES6 arrow function. In a *concise body*, an implicit return is attached; thus, you can remove the `return` statement. This will happen often in this book, so be sure to understand the difference between a block body and a concise body when using arrow functions.
+Ju mund ta hiqni * trupin e bllokut*, kllapa gjarpërushe, me funksionin shigjetë ES6. Në një * trup konciz*, një kthim i nënkuptuar është i bashkangjitur; kështu, ju mund të hiqni deklaratën `return`. Kjo do të ndodhë shpesh në këtë libër, prandaj sigurohuni që të kuptoni dallimin në mes të një trupi bllok dhe një trupi konciz kur përdorni funksione shigjetë.
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
@@ -698,13 +698,13 @@ You can remove the *block body*, the curly braces, with the ES6 arrow function. 
 # leanpub-end-insert
 ~~~~~~~~
 
-Your JSX should look more concise and readable now, as it omits the `function` statement, the curly braces, and the return statement.
+JSX-ja juaj duhet të duket më koncize dhe më e lexueshme tani, meqë nuk përmban deklaratën e "funksionit", kllapat gjarpërushe dhe deklaratën e kthimit.
 
-### Exercises:
+### Ushtrime:
 
-* Read about [ES6 arrow functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+* Lexoni rreth [ES6 arrow functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
-## ES6 Classes
+## ES6 Klasat
 
 JavaScript ES6 introduced classes, which are commonly used in object-oriented programming languages. JavaScript, always flexible in its programming paradigms, allows functional programming and object-oriented programming to work side-by-side.
 
