@@ -4,9 +4,9 @@ Ky kapitull do t'ju udhëheqë me bazat e React. Ai mbulon gjendjen dhe ndërvep
 
 ## Gjendja e Komponentit Lokal
 
-Local component state, also known as internal component state, allows you to save, modify, and delete properties stored in your component. The ES6 class component then uses a constructor to initialize local component state. The constructor is called only once, when the component initializes:
+Gjendja e komponentit lokal, e njohur edhe si gjendja e komponentit të brendshëm, ju lejon të ruani, modifikoni dhe fshini propertitë e ruajtura në komponentën tuaj. Komponenti i klasës ES6 pastaj përdor një konstruktor për të inicializuar gjendjen e komponentit lokal. Konstruktori thirret vetëm një herë, kur komponenti inicializohet :
 
-Let's introduce a class constructor.
+Le të prezantojmë konstruktorin e klasës.
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
@@ -23,9 +23,9 @@ class App extends Component {
 }
 ~~~~~~~~
 
-The App component is a subclass of `Component`, so the `extends Component` is in the App component declaration.
+Komponenti i App është një nënklasë e `Component`, kështu që `extends Component`  është në deklaratën e komponentit të App.
 
-It is mandatory to call `super(props);`. It sets `this.props` in your constructor in case you want to access them there. They would be `undefined` when accessing `this.props` in your constructor otherwise. In this case, the initial state of the component should be the sample list of items:
+Është e detyrueshme të quhet `super(props);`. Ajo vendos `this.props` në konstruktorin tuaj në rast se doni të akesonit ato atje. Ato do të ishin `undefined` kur akesojnë `this.props` konstruktorin tuaj ndryshe. Në këtë rast, gjendja fillestare e komponentit duhet të jetë lista shembull e items:
 
 
 {title="src/App.js",lang="javascript"}
