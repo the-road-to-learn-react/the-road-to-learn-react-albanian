@@ -706,11 +706,11 @@ JSX-ja juaj duhet të duket më koncize dhe më e lexueshme tani, meqë nuk për
 
 ## ES6 Klasat
 
-JavaScript ES6 introduced classes, which are commonly used in object-oriented programming languages. JavaScript, always flexible in its programming paradigms, allows functional programming and object-oriented programming to work side-by-side.
+JavaScript ES6 prezantoi klasat, të cilat zakonisht përdoren në gjuhët e programimit të orientuara në objekte. JavaScript, gjithmonë fleksibël në paradigmat e tij të programimit, lejon programimin funksional dhe programimin e orientuar drejt objekteve për të punuar krah për krah.
 
-While React embraces functional programming, e.g. immutable data structures and function compositions, classes are used to declare ES6 class components. React mixes the good parts of both programming paradigms.
+Ndërsa React përfshin programimin funksional, p.sh. struktura të pandryshueshme të të dhënave dhe kompozime të funksioneve, klasat përdoren për të deklaruar komponentët e klasës ES6. React përzien pjesët e mira të të dy paradigmave të programimit.
 
-Consider the following Developer class to examine a JavaScript ES6 class without a component.
+Konsideroni klasën e mëposhtme të Zhvilluesit për të shqyrtuar një klasë JavaScript ES6 pa një komponent.
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~~
@@ -726,9 +726,9 @@ class Developer {
 }
 ~~~~~~~~
 
-A class has a constructor to make it instantiable. The constructor takes arguments and assigns them to the class instance. A class can also define functions. Because the function is associated with a class, it is called a method, or a class method.
+Një klasë ka një konstruktor për ta bërë atë të menjëhershme. Konstruktori merr argumente dhe i cakton ato në instancën e klasës. Një klasë gjithashtu mund të përcaktojë funksionet. Për shkak se funksioni është i lidhur me një klasë, quhet një metodë ose një metodë klase.
 
-The Developer class is the only class declaration we use here, as you can create multiple instances of a class by invoking it. It is similar to the ES6 class component, which has a declaration, but you have to use it somewhere else to instantiate it:
+Klasa e Zhvilluesit është e vetmja deklaratë e klasës që ne përdorim këtu, pasi që mund të krijosh raste të shumta të një klase duke u thirrur në të. Është e ngjashme me komponentën e klasës ES6, e cila ka një deklaratë, por ju duhet ta përdorni atë diku tjetër për ta nxjerrë atë:
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~~
@@ -737,7 +737,7 @@ console.log(robin.getName());
 // output: Robin Wieruch
 ~~~~~~~~
 
-React uses JavaScript ES6 classes for ES6 class components, which you have already used at least once so far:
+React përdor klasa JavaScript ES6 për komponentët e klasës ES6, të cilat ju keni përdorur tashmë të paktën një herë deri më tani:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
@@ -752,11 +752,11 @@ class App extends Component {
 }
 ~~~~~~~~
 
-When you declare the App component it extends from another component. In object-oriented programming, the term "extends" refers to the principle of inheritance, which means that functionality can be passed from one class to another. The App class extends from the Component class, meaning it inherits functionality from the Component class. The Component class is used to extend a basic ES6 class to a ES6 component class. It has all the functionalities that a component in React needs. The render method is one function you have already used. You will learn about other component class methods as we move along.
+Kur deklaroni komponentin e APP ai shtrihet nga një komponent tjetër. Në programimin e orientuar drejt objektit, termi "shtrihet" i referohet parimit të trashëgimisë, që do të thotë se funksionaliteti mund të kalojë nga një klasë në tjetrën. Klasa e aplikacionit shtrihet nga klasa e komponentit, që do të thotë se trashëgon funksionalitetin nga klasa e komponentit. Klasa e Komponentit përdoret për të zgjeruar një klasë bazë ES6 në një klasë komponentësh ES6. Ajo ka të gjitha funksionalitetet që një komponent në React ka nevojë. Metoda e paraqitjes është një funksion që keni përdorur tashmë. Ju do të mësoni rreth metodave të tjera të klasës së komponentit teksa lëvizim së bashku.
 
-The `Component` class encapsulates all the implementation details of a React component, which allows developers to use classes as components in React.
+Klasa 'Component' enkapsulon të gjitha detajet e implementimit të një komponenti React, i cili lejon zhvilluesit të përdorin klasat si komponente në React.
 
-Methods exposed by a React `Component` are its public interface. One of these methods must be overridden, while the others don't need to be overridden. You will learn about these when we discuss lifecycle methods later. The `render()` method has to be overridden, because it defines the output of a React `Component`, so it must be defined. These are the basics of JavaScript ES6 classes, and how they are used in React to extend them to components.
+Metodat e ekspozuara nga React `Component` janë ndërfaqja e tij publike. Një nga këto metoda duhet të mbivendoset, ndërsa të tjerat nuk kanë nevojë të mbivendosen. Ju do të mësoni rreth këtyre kur ne diskutojmë metodat e ciklit të jetës më vonë. Metoda `render ()` duhet të mbivendoset, sepse ajo përcakton outputin e React `Component`, prandaj duhet të përcaktohet. Këto janë bazat e klasave JavaScript ES6, dhe se si ato përdoren në React për t'i zgjeruar ato tek komponentët.
 
 ### Ushtrime:
 
