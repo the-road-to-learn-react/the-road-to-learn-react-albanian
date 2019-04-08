@@ -1,8 +1,8 @@
-# Basics in React
+# Bazat në React
 
-This chapter will guide you through the basics of React. It covers state and interactions in components as we move past static components. We will also cover the different ways to declare a component, and how to keep components composable and reusable.
+Ky kapitull do t'ju udhëheqë me bazat e React. Ai mbulon gjendjen dhe ndërveprimet në komponentë kur lëvizim komponentët e mëparshëm statikë. Ne gjithashtu do të mbulojmë mënyrat e ndryshme për të deklaruar një komponent, dhe si të mbajmë përbërësit e kompozueshëm dhe të ripërdorshëm.
 
-## Local Component State
+## Gjendja e Komponentit Lokal
 
 Local component state, also known as internal component state, allows you to save, modify, and delete properties stored in your component. The ES6 class component then uses a constructor to initialize local component state. The constructor is called only once, when the component initializes:
 
