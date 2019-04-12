@@ -1,4 +1,4 @@
-# Contributor(s)
+# Kontribues
 
 Many people have made it possible to present *The Road to learn React*, which is currently one of the most downloaded React.js books in circulation. The original author is German software engineer [Robin Wieruch](https://www.robinwieruch.de/), though translations of the book wouldn't be possible without the help of many others. This version of the book got translated by ... [tell your personal story here].
 
