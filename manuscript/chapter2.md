@@ -59,7 +59,7 @@ class App extends Component {
 }
 ~~~~~~~~
 
-The state is bound to the class using the `this` object, so you can access the local state of the whole component. For instance, it can be used in the `render()` method. Previously you have mapped a static list of items in your `render()` method that was defined outside of your component. Now you are about to use the list from your local state in your component.
+Gjendja lidhet me klasën duke përdorur objektin `this`, kështu që ju mund të aksesoni gjendjen lokale të të gjithë komponentit. Për shembull, mund të përdoret në metodën `render ()`. Më parë keni hartuar një listë statike të items në metodën `render ()` që është përcaktuar jashtë komponentit tuaj. Tani jeni gati të përdorni listën nga gjendja lokale në komponentin tuaj.
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~~
